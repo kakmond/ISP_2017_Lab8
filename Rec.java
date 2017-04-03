@@ -52,49 +52,13 @@ public class Rec {
 	 * reverse("abcdefg") = "gfedcba".
 	 */
 	public static String reverse(String s) {
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
-		// fill me in
->>>>>>> origin/removeChar
-
-	}
-
-	public static void main(String[] args) {
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/removeChar
-=======
 		if (s.length() <= 1)
 			return s;
 		return s.charAt(s.length() - 1) + reverse(s.substring(0, s.length() - 1));
+
 	}
 
 	public static void main(String[] args) {
->>>>>>> origin/reverse
-		System.out.println(numDigits(123));
-		System.out.println(numDigits(123456));
-		System.out.println(numDigits(1));
-		System.out.println(numDigits(0));
-<<<<<<< HEAD
-<<<<<<< HEAD
-		// System.out.println("-----------------");
-		// System.out.println(sumDigits(123));
-		// System.out.println(sumDigits(123456));
-		// System.out.println(sumDigits(1));
-		// System.out.println(sumDigits(0));
-		// System.out.println("-----------------");
-		// System.out.println(removeChar("eawabbcceccddeeaaeeeee", 'e'));
-		// System.out.println(removeChar("acacacacac", 'a'));
-		// System.out.println("-----------------");
-		// System.out.println(reverse("aaabbbaccabda"));
-		// System.out.println(reverse("abbcccdeaaa"));
-		// System.out.println(reverse("AMANAPLANACANALPANAMA"));
-=======
-=======
->>>>>>> origin/reverse
 		System.out.println("-----------------");
 		System.out.println(sumDigits(123));
 		System.out.println(sumDigits(123456));
@@ -107,10 +71,5 @@ public class Rec {
 		System.out.println(reverse("aaabbbaccabda"));
 		System.out.println(reverse("abbcccdeaaa"));
 		System.out.println(reverse("AMANAPLANACANALPANAMA"));
-<<<<<<< HEAD
->>>>>>> origin/removeChar
-=======
-		
->>>>>>> origin/reverse
 	}
 }
