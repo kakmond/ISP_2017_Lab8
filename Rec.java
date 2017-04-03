@@ -6,13 +6,13 @@ public class Rec {
 	 * 4. Precondition: n >= 0.
 	 */
 	public static int numDigits(int n) {
+
 		if (n == 0)
 			return 1;
 		if (n >= 0 && n < 10) return 1;
 		else
 			return 1 + numDigits(n / 10);
-		// fill me in
-
+		
 	}
 
 	/**
@@ -21,9 +21,10 @@ public class Rec {
 	 * Precondition: n >= 0.
 	 */
 	public static int sumDigits(int n) {
-		return 0;
 
-		// fill me in
+		if (n <= 0)
+			return 0;
+		return (n % 10) + sumDigits(n / 10);
 
 	}
 
@@ -32,9 +33,7 @@ public class Rec {
 	 * 'e') = "abab".
 	 */
 	public static String removeChar(String s, char to_remove_char) {
-		return null;
 
-		// fill me in
 
 	}
 
@@ -43,13 +42,12 @@ public class Rec {
 	 * reverse("abcdefg") = "gfedcba".
 	 */
 	public static String reverse(String s) {
-		return null;
 
-		// fill me in
 
 	}
 
 	public static void main(String[] args) {
+
 		System.out.println(numDigits(123));
 		System.out.println(numDigits(123456));
 		System.out.println(numDigits(1));
