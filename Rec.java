@@ -6,7 +6,13 @@ public class Rec {
 		numDigits(1356) = 4.
 		Precondition: n >= 0. */
     public static int numDigits(int n) {
-	
+    	int count = 0;
+    	while (n >= 10) {
+    		n = n / 10;
+			count++;
+		}
+    	count++;
+    	return count;
 	// fill me in
 	
     }
@@ -16,6 +22,7 @@ public class Rec {
       sumDigits(345) = 12.
       Precondition: n >= 0. */
     public static int sumDigits(int n) {
+		return 0;
 	
 	// fill me in
 	
@@ -24,6 +31,7 @@ public class Rec {
     /** = a copy of s with to_remove_char removed.
 		Example: removeChar("abeabe", 'e') = "abab". */
 	public static String removeChar(String s, char to_remove_char) {
+		return null;
 	
 	// fill me in
 	
@@ -32,6 +40,7 @@ public class Rec {
     /** = a copy of s with characters in reverse order.
 		Example: reverse("abcdefg") = "gfedcba". */
 	public static String reverse(String s) {
+		return null;
 	
 	// fill me in
 	
@@ -42,17 +51,17 @@ public class Rec {
         System.out.println(numDigits(123456));
         System.out.println(numDigits(1));
         System.out.println(numDigits(0));
-        System.out.println("-----------------");
-        System.out.println(sumDigits(123));
-        System.out.println(sumDigits(123456));
-        System.out.println(sumDigits(1));
-        System.out.println(sumDigits(0));
-	System.out.println("-----------------");
-	System.out.println(removeChar("eawabbcceccddeeaaeeeee", 'e'));
-	System.out.println(removeChar("acacacacac", 'a'));
-	System.out.println("-----------------");		
-	System.out.println(reverse("aaabbbaccabda"));
-        System.out.println(reverse("abbcccdeaaa"));
-	System.out.println(reverse("AMANAPLANACANALPANAMA"));
+//        System.out.println("-----------------");
+//        System.out.println(sumDigits(123));
+//        System.out.println(sumDigits(123456));
+//        System.out.println(sumDigits(1));
+//        System.out.println(sumDigits(0));
+//	System.out.println("-----------------");
+//	System.out.println(removeChar("eawabbcceccddeeaaeeeee", 'e'));
+//	System.out.println(removeChar("acacacacac", 'a'));
+//	System.out.println("-----------------");		
+//	System.out.println(reverse("aaabbbaccabda"));
+//        System.out.println(reverse("abbcccdeaaa"));
+//	System.out.println(reverse("AMANAPLANACANALPANAMA"));
     }
 }
